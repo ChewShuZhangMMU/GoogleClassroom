@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/GoogleClassroom.iml" filepath="$PROJECT_DIR$/.idea/GoogleClassroom.iml" />
+      <module fileurl="file://$PROJECT_DIR$/GoogleClassroomApplication/GoogleClassroomApplication.iml" filepath="$PROJECT_DIR$/GoogleClassroomApplication/GoogleClassroomApplication.iml" />
+    </modules>
+  </component>
+</project>

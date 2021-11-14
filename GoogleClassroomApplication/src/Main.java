@@ -1,31 +1,24 @@
-public class Main {
+import javafx.application.Application;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
+import javafx.scene.paint.Color;
+import javafx.stage.Stage;
+
+import model.GlobalState;
+
+/*
+public class Main extends Application{
+    @Override
+    public void start(stage primaryStage) throws Exception{
+
+    }
 }
+*/
 
+public class Main {
 
-//user
-//create property post
-//edit property post
-//database
-
-//property
-//filter search
-
-//register
-//login
-//admin approval
-
-//add favourite
-//edit profile
-
-//User: student & organizer
-
-//classroom class
-//assignemnt class
-//to do list class
-
-//login API
-
-//calendar *special API
+}
 
 
 

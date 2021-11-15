@@ -7,18 +7,26 @@ import javafx.stage.Stage;
 
 import model.GlobalState;
 
-/*
 public class Main extends Application{
     @Override
-    public void start(stage primaryStage) throws Exception{
+    public void start(Stage primaryStage) throws Exception{
+        GlobalState mainScreen = GlobalState.getInstance();
+        mainScreen.saveStage(primaryStage);
+        Parent root = FXMLLoader.load(getClass().getResource("view/"));
+        primaryStage.setTitle("CyberRent");
+        primaryStage.setResizable(false);
+        primaryStage.setScene(new Scene(root, 1280, 720, Color.BLACK));
+        primaryStage.show();
+    }
 
+    public static void main(String[] args){
+        System.out.println("Hello");
+        launch(args);
     }
 }
-*/
 
-public class Main {
 
-}
+
 
 
 

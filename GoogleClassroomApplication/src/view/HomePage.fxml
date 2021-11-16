@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.HomePageController">
+   <top>
+      <AnchorPane prefHeight="80.0" prefWidth="1280.0" style="-fx-background-color: #26619c;" BorderPane.alignment="CENTER">
+         <children>
+            <Button fx:id="loginButton" layoutX="840.0" layoutY="20.0" mnemonicParsing="false" onAction="#switchToLogin" prefHeight="40.0" prefWidth="143.0" style="-fx-background-color: TRANSPARENT;" text="To-Do-List" textFill="WHITE">
+               <font>
+                  <Font name="Arial Black" size="16.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></Button>
+            <Button fx:id="registerButton" layoutX="657.0" layoutY="20.0" mnemonicParsing="false" onAction="#switchToRegister" prefHeight="40.0" prefWidth="183.0" style="-fx-background-color: TRANSPARENT;" text="View Classroom" textFill="WHITE">
+               <font>
+                  <Font name="Arial Black" size="16.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></Button>
+            <Button layoutX="25.0" layoutY="13.0" mnemonicParsing="false" onAction="#switchToHomePage" prefHeight="40.0" prefWidth="40.0" style="-fx-background-color: TRANSPARENT;" textFill="#131313">
+               <graphic>
+                  <ImageView fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@image/Common/Homepage-houseicon.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button fx:id="loginButton1" layoutX="98.0" layoutY="20.0" mnemonicParsing="false" onAction="#switchToLogin" prefHeight="40.0" prefWidth="158.0" style="-fx-background-color: TRANSPARENT;" text="View Calendar" textFill="WHITE">
+               <font>
+                  <Font name="Arial Black" size="16.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button fx:id="loginButton11" layoutX="1143.0" layoutY="20.0" mnemonicParsing="false" onAction="#switchToLogin" prefHeight="40.0" prefWidth="110.0" style="-fx-background-color: TRANSPARENT;" text="Login" textFill="WHITE">
+               <font>
+                  <Font name="Arial Black" size="16.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button fx:id="loginButton2" layoutX="983.0" layoutY="20.0" mnemonicParsing="false" onAction="#switchToLogin" prefHeight="40.0" prefWidth="175.0" style="-fx-background-color: TRANSPARENT;" text="Join Classroom" textFill="WHITE">
+               <font>
+                  <Font name="Arial Black" size="16.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+         </children>
+      </AnchorPane>
+   </top>
+   <center>
+      <AnchorPane prefHeight="640.0" prefWidth="1280.0" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fx:id="menuItem" fitHeight="640.0" fitWidth="1280.0" layoutX="3.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@image/Homepage/Homepage-background.jpg" />
+               </image></ImageView>
+            <HBox layoutX="161.0" layoutY="350.0" prefHeight="38.0" prefWidth="964.0">
+               <children>
+                  <MenuButton fx:id="propertyType" mnemonicParsing="false" prefHeight="31.0" prefWidth="176.0" style="-fx-background-color: transparent;" text="All Residential" textFill="WHITE">
+                     <items>
+                        <MenuItem mnemonicParsing="false" onAction="#selectPropertyType" text="All Residential" />
+                        <MenuItem mnemonicParsing="false" onAction="#selectPropertyType" text="Condominium" />
+                        <MenuItem mnemonicParsing="false" onAction="#selectPropertyType" text="Duplex" />
+                        <MenuItem mnemonicParsing="false" onAction="#selectPropertyType" text="Service Residence" />
+                        <MenuItem mnemonicParsing="false" onAction="#selectPropertyType" text="Terraced House" />
+                        <MenuItem mnemonicParsing="false" onAction="#selectPropertyType" text="Townhouse" />
+                        <MenuItem mnemonicParsing="false" onAction="#selectPropertyType" text="Townhouse Condominium" />
+                     </items>
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </MenuButton>
+               </children>
+            </HBox>
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>

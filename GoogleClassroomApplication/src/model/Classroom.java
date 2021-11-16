@@ -6,6 +6,8 @@ public class Classroom {
 
     private int ClassroomId;
     private String ClassroomName;
+    private String ClassroomCode;
+    private String ClassroomMeetLinkage;
     private int ClassroomOrganizerID;
     private String ClassroomOwnerName;
 
